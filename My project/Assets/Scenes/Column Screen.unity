@@ -173,7 +173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9396473, g: 0.70354223, b: 0.9622642, a: 1}
+  m_Color: {r: 0.9396473, g: 0.7647059, b: 0.9622642, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -257,10 +257,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -268,7 +268,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: Please click one of the icons on the right.
 --- !u!222 &292521094
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -347,7 +347,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 
 --- !u!222 &296743866
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -367,6 +367,8 @@ GameObject:
   - component: {fileID: 372290789}
   - component: {fileID: 372290791}
   - component: {fileID: 372290790}
+  - component: {fileID: 372290793}
+  - component: {fileID: 372290792}
   m_Layer: 5
   m_Name: Yellow Column
   m_TagString: Untagged
@@ -431,6 +433,47 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 372290788}
   m_CullTransparentMesh: 1
+--- !u!114 &372290792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372290788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 372290793}
+          m_TargetAssemblyTypeName: AbstractionColumn, Assembly-CSharp
+          m_MethodName: DisplayInformation
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &372290793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372290788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3adaae504ae95cf45b7d42c8644a9ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &572599325
 GameObject:
   m_ObjectHideFlags: 0
@@ -520,9 +563,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2627bc41a6b28264a93e9fab8695a3ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ColumnName: Abstraction
-  ColumnDescription: Abstraction Description
-  TimesClicked: 0
 --- !u!114 &572599330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -670,9 +710,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b89e6c3f1289a84ab7c7e275b37f151, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ColumnName: Abstraction
-  ColumnDescription: Abstraction Description
-  TimesClicked: 0
 --- !u!1 &1147061497
 GameObject:
   m_ObjectHideFlags: 0
@@ -940,9 +977,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e085926bef6857f45ab0982f0d7995fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ColumnName: Abstraction
-  ColumnDescription: Abstraction Description
-  TimesClicked: 0
 --- !u!1 &1885498715
 GameObject:
   m_ObjectHideFlags: 0

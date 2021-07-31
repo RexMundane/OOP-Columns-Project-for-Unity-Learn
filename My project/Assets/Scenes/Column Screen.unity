@@ -368,7 +368,7 @@ GameObject:
   - component: {fileID: 372290791}
   - component: {fileID: 372290790}
   m_Layer: 5
-  m_Name: Image (3)
+  m_Name: Yellow Column
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -442,8 +442,10 @@ GameObject:
   - component: {fileID: 572599326}
   - component: {fileID: 572599328}
   - component: {fileID: 572599327}
+  - component: {fileID: 572599329}
+  - component: {fileID: 572599330}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Blue Column
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -506,6 +508,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 572599325}
   m_CullTransparentMesh: 1
+--- !u!114 &572599329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572599325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2627bc41a6b28264a93e9fab8695a3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ColumnName: Abstraction
+  ColumnDescription: Abstraction Description
+  TimesClicked: 0
+--- !u!114 &572599330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572599325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 572599329}
+          m_TargetAssemblyTypeName: AbstractionColumn, Assembly-CSharp
+          m_MethodName: DisplayInformation
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &829767554
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,8 +563,10 @@ GameObject:
   - component: {fileID: 829767555}
   - component: {fileID: 829767557}
   - component: {fileID: 829767556}
+  - component: {fileID: 829767559}
+  - component: {fileID: 829767558}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Green Column
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -581,6 +629,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 829767554}
   m_CullTransparentMesh: 1
+--- !u!114 &829767558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829767554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 829767559}
+          m_TargetAssemblyTypeName: AbstractionColumn, Assembly-CSharp
+          m_MethodName: DisplayInformation
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &829767559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829767554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b89e6c3f1289a84ab7c7e275b37f151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ColumnName: Abstraction
+  ColumnDescription: Abstraction Description
+  TimesClicked: 0
 --- !u!1 &1147061497
 GameObject:
   m_ObjectHideFlags: 0
@@ -742,7 +834,7 @@ GameObject:
   - component: {fileID: 1642720778}
   - component: {fileID: 1642720777}
   m_Layer: 5
-  m_Name: Image (2)
+  m_Name: Red Column
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

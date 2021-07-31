@@ -7,7 +7,7 @@ public class TitleScreenIcon : MonoBehaviour
 {
     public void NextScene()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
         Debug.Log("Scene Transition goes Here");
     }
 }

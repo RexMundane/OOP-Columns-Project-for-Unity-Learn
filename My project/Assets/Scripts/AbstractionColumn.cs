@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class AbstractionColumn : MonoBehaviour
 {
-    private Text TitleField;
-    private Text DescriptionField;
+    public Text TitleField { get; private set; }
+    public Text DescriptionField { get; private set; }
     public string ColumnName = "Abstraction";
     public string ColumnDescription = "Abstraction Description";
     public int TimesClicked = 0;
